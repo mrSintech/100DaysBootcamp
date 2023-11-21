@@ -114,6 +114,7 @@ class Hangman:
         # draw logo
         print(shapes.hangman_logo)
         print(f"i'm thinking about a {len(self.word)} letter word")
+        print(self.word_placeholder)
 
         while self.life_remains > 0 and self.situation is False:
             guess_letter = input("Guess a letter in word: ").upper()
@@ -132,10 +133,10 @@ class Hangman:
         :return:
         """
         if self.situation:
-            print("Hooray, you won!")
+            print("you won!")
 
         else:
-            print('Oh no, you lost, try again')
+            print('you lost, try again')
 
         print("the word was", self.word)
         quit_or_restart = input("for restart hit Enter and to end the game type q: ")
