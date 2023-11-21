@@ -30,7 +30,7 @@ class PasswordGenerator:
     def numbers_random_generator(self):
         return random.choices(self.numbers, k=self.numbers_count)
 
-    def symbol_random_generator(self):
+    def symbols_random_generator(self):
         return random.choices(self.symbols, k=self.symbols_count)
 
     def generate(self):
